@@ -53,8 +53,11 @@ Before working on a dataset, it is important to ensure the data is clean. It is 
 Firstly, I loaded the dataset and gathered some basic information about the dataset.
 
 1.Some column names were misspelt or not in snake case, hence renamed them.
+
 2.Check for any missing or duplicated values in the dataset.
+
 3.There were 3008 duplicated rows, since the dataset has 10 variable removing the duplicates will work best.
+
 4.The last step is to determine outliers in the dataset.
 
 ## Exploratory Data Analysis
