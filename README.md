@@ -37,8 +37,17 @@ The datasets is called the **HR_capstone_dataset.csv** from [Kaggle](https://www
 | promotion_last_5years | Whether or not the employee was promoted in the last 5 years |
 | department |The employee's department |
 | salary |The employee's salary (low, medium, or high) |
----
 
+---
+## Tools Used
+Python: Core programming language
+Pandas & NumPy: Data cleaning, manipulation, descriptive statistics
+Matplotlib & Seaborn: Visualizations (histograms, bar charts, boxplots, heatmaps)
+Scikit-learn: Preprocessing, model building, evaluation metrics
+XGBoost: Gradient boosting model for high performance
+PowerBI: Interactive dashboards for stakeholders
+
+---
 ##  Methodologies Used
 
 1. Exploratory Data Analysis (EDA)- Visualized attrition trends by age, department, salary, overtime. Identified patterns and correlations using heatmaps, bar charts, and boxplots.  
@@ -47,19 +56,17 @@ The datasets is called the **HR_capstone_dataset.csv** from [Kaggle](https://www
 4. Decision Tree - Built interpretable tree-based model to capture non-linear relationships.Visualized decision paths for HR managers.  
 5. Random Forest - Improved predictive performance using ensemble learning. Ranked feature importance to highlight key drivers of attrition.  
 6. XGBoost - Applied gradient boosting for high accuracy.Tuned hyperparameters to optimize ROC-AUC and Recall.  
-
+---
 ##  Data Cleansing
 Before working on a dataset, it is important to ensure the data is clean. It is also necessary to understand the dataset through EDA before diving deeper into the data.
 Firstly, I loaded the dataset and gathered some basic information about the dataset.
 
 1.Some column names were misspelt or not in snake case, hence renamed them.
-
 2.Check for any missing or duplicated values in the dataset.
-
 3.There were 3008 duplicated rows, since the dataset has 10 variable removing the duplicates will work best.
-
 4.The last step is to determine outliers in the dataset.
 
+---
 ## Exploratory Data Analysis
 Understand the ratio of employees who stayed in the company to those who left.
 For data cleaning, descriptive statistics .describe(), .value_counts(), and handling missing values.
@@ -67,26 +74,25 @@ For numerical operations and summary statistics.
 For visualizations like histograms, bar charts, boxplots, heatmaps, and correlation matrices.
 For encoding categorical variables, scaling features, and preparing data for modeling.
 
+---
+## Evaluation
+Metrics: Accuracy, Precision, Recall, F1-score, ROC-AUC
+Focused on Recall to minimize false negatives (critical in attrition prediction)
+Visualized ROC curves and confusion matrices
+Accuracy score : Refers to the proportion of data points that were correctly categorized. Accuracy is an appropriate metric to use when the data is balanced, in other words, when the data has a roughly equal number of positive examples and negative examples. Otherwise, accuracy can be biased.
+Recall score: The proportion of positives the model was able to identify correctly.
+Precision Score: The proportion of positive predictions that were true positives.
+F1 score: It’s a harmonic mean of “precision” & “recall”, taking both the metrics into account.
+Confusion matrix: A graphical representation of how accurate a classifier is at predicting the labels for a categorical variable
 
 ---
+## Dashboard & Visualization
 
+---
 ##  Results
 - **Top attrition drivers**: Overtime, job satisfaction, compensation, tenure.  
 - **Best model**: Random Forest with ROC-AUC of 0.87 and Recall of 0.82.  
 - **Business insight**: Employees with low satisfaction and high overtime are most at risk.  
 - **Recommendation**: Improve work-life balance policies and review compensation structures.
 
----
-
-##  Tools & Technologies
-- **Python**: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn  
-- **EDA & Modeling**: Jupyter Notebook  
-- **Dashboard**: Streamlit / PowerBI  
-- **Version Control**: Git & GitHub  
-
----
-
-
-
----
 
