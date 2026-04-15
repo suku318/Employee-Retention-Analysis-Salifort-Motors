@@ -87,6 +87,24 @@ Confusion matrix: A graphical representation of how accurate a classifier is at 
 
 ---
 ## Dashboard & Visualization
+#### Attrition Overview
+Pie chart showing attrition vs. retention.
+Bar chart of attrition rates by department.
+#### Overtime & Attrition
+Boxplot comparing average monthly hours for employees who left vs. stayed.
+Interactive filter to view attrition by overtime status.
+#### Satisfaction Analysis
+Histogram of satisfaction scores split by attrition outcome.
+Heatmap showing correlation between satisfaction, overtime, and attrition.
+#### Compensation & Tenure
+Scatter plot of salary vs. tenure, colored by attrition.
+Trend line showing attrition likelihood by tenure buckets.
+#### Model Insights
+Feature importance plot (Random Forest / XGBoost)
+ROC curve comparing models.
+#### Confusion matrix visualization for predictions.
+Interactive Prediction Tool
+HR managers can input employee details (age, department, overtime, satisfaction) and get a predicted attrition risk score.
 
 ---
 ##  Results
